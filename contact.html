@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+            
+        </style>
+    </head>
+    <body>
+       <p align="middle" style="font-size: 30px;"><u>Contact Form</u></p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <br>
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <br>
+    <label for="state">State</label><br>
+    <select id="state" name="state">
+      <option value="andhra pradesh">Andhra Pradesh</option>
+      <option value="arunachal pradesh">Arunachal Pradesh</option>
+      <option value="assam">Assam</option>
+        <option value="bihar">Bihar</option>
+        <option value="chhattisgarh">Chhattisgarh</option>
+        <option value="goa">Goa</option>
+        <option value="gujarat">Gujarat</option>
+        <option value="haryana">Haryana</option>
+        <option value="himachal pradesh">Himachal Pradesh</option>
+        <option value="jammu and kashmir">Jammu and Kashmir</option>
+        <option value="jharkhand">Jharkhand</option>
+        <option value="karnataka">Karnataka</option>
+        <option value="kerala">Kerala</option>
+        <option value="madhya pradesh">Madhya Pradesh</option>
+        <option value="maharashtra">Maharashtra</option>
+        <option value="manipur">Manipur</option>
+        <option value="meghalaya">Meghalaya</option>
+        <option value="mizoram">Mizoram</option>
+        <option value="nagaland">Nagaland</option>
+        <option value="osidha">Odisha</option>
+        <option value="punjab">Punjab</option>
+        <option value="rajasthan">Rajasthan</option>
+        <option value="sikkim">Sikkim</option>
+        <option value="tamil nadu">Tamil Nadu</option>
+        <option value="telangana">Telangana</option>
+        <option value="tripura">Tripura</option>
+        <option value="uttarakhand">Uttarakhand</option>
+        <option value="uttar pradesh">Uttar Pradesh</option>
+        <option value="west bengal">West Bengal</option>
+        
+    </select>
+    <br>
+    <label for="subject">Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+    </body>
+</html>
